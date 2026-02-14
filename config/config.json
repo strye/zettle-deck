@@ -1,13 +1,6 @@
 {
   "projectDir": "./",
-  "obsidianApiKey": "a379dc4c1f1a4862d831b26fbb3b38bf2dafc4bdf15b5a9bb93e4022e670ed25",
-  "linkTarget": "content/",
-  "symLinks": [
-    {
-      "source": "C:\\Users\\wills\\Dropbox\\0_Intake\\FiloFax",
-      "target": "FiloFax"
-    }
-  ]
+  "obsidianApiKey": "a379dc4c1f1a4862d831b26fbb3b38bf2dafc4bdf15b5a9bb93e4022e670ed25"
 }
 
 
