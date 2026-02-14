@@ -1,0 +1,16 @@
+{
+  "name": "@zettle-deck/zettel-agent",
+  "version": "0.1.0",
+  "description": "MCP server implementation for a single markdown repository",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@zettle-deck/zettel-forge": "*",
+    "@zettle-deck/neuro-dex": "*",
+    "@zettle-deck/slip-kit": "*"
+  }
+}

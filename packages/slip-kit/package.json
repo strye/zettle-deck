@@ -1,0 +1,17 @@
+{
+  "name": "@zettle-deck/slip-kit",
+  "version": "0.1.0",
+  "description": "Shared utilities for working with markdown files across the zettle-deck ecosystem",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test src/**/*.test.js"
+  },
+  "dependencies": {
+    "unified": "^11.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0"
+  }
+}

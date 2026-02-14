@@ -1,0 +1,10 @@
+{
+  "name": "zettle-deck",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces"
+  }
+}
