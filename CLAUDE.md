@@ -44,8 +44,13 @@ Scaffolded. Package directories and `package.json` files exist for all four pack
 
 See `plan.md` for the build sequence and `design.md` for resolved and open decisions.
 
-## Open Questions (resolve before first source file)
+## Key Decisions (see design.md for full rationale)
 
-- Minimum Node.js version to target?
-- RAG backend for neuro-dex: embedded vs. external vector store?
-- Per-package versioning vs. lockstep across the mono-repo?
+- **Node.js minimum:** 22.12.0 (required for `require(esm)` — needed by LanceDB)
+- **Module format:** CommonJS throughout
+- **neuro-dex RAG stack:** LanceDB (embedded vector store) + `@huggingface/transformers` ONNX (local embeddings, no API key or server needed)
+- **Versioning:** Per-package independent versioning
+
+## Open Questions
+
+- Ollama integration in neuro-dex: optional config flag, auto-detected, or deferred?

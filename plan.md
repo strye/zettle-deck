@@ -180,9 +180,17 @@ Not supported. Path sandboxing in slip-kit will reject symlink traversal.
 Not enforced server-side. Tool exposure is the responsibility of the implementer.
 
 **Module format**
-CommonJS (`require`) throughout. Rationale: maximum Node.js compatibility, no build step, simpler interop with the MCP SDK.
+CommonJS (`require`) throughout. Rationale: maximum Node.js compatibility, no build step, simpler interop with the MCP SDK. See design.md D-002.
+
+**Node.js minimum version**
+22.12.0. Required for stable `require(esm)` support needed by LanceDB. See design.md D-006.
+
+**RAG backend for neuro-dex**
+LanceDB (`@lancedb/lancedb`) for the vector store; `@huggingface/transformers` with `all-MiniLM-L6-v2` for local embeddings. Fully embedded — no separate server or API key required. See design.md D-007.
+
+**Versioning**
+Per-package independent versioning. See design.md D-008.
 
 ## Open Questions
 
-- Minimum Node.js version to target?
-- RAG backend for neuro-dex: embedded (vectra/hnswlib) vs. external (e.g., Chroma)?
+- Ollama integration in neuro-dex: optional config flag, auto-detected, or deferred?
