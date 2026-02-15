@@ -17,9 +17,20 @@ zettle-deck/
 │   └── zettel-agent/   # runnable MCP server (depends on all three)
 ├── config/
 │   └── config.json     # repository root, Obsidian API key placeholder
+├── scripts/            # bash build/install/ops scripts
+├── .indez/             # SDD specifications (epics, features, specs, steering)
+│   ├── steering/       # product, tech, structure steering docs
+│   ├── planning/
+│   │   ├── epics/      # EPIC-NNN-slug.md
+│   │   └── features/   # FEAT-NNN-slug.md
+│   └── specs/
+│       ├── feat-001-slip-kit/     # specs for slip-kit (SPEC-000 through SPEC-005)
+│       ├── feat-002-zettel-forge/ # specs for zettel-forge (SPEC-006 through SPEC-010)
+│       ├── feat-003-neuro-dex/    # specs for neuro-dex (SPEC-013)
+│       └── feat-004-zettel-agent/ # specs for zettel-agent (SPEC-011, SPEC-012, SPEC-014)
 ├── package.json        # npm workspaces root
-├── plan.md             # capability breakdown and build sequence
-└── design.md           # architectural decisions (living document)
+├── plan.md             # legacy capability breakdown (reference only)
+└── design.md           # legacy architectural decisions (reference only)
 ```
 
 ## Language and Tooling Rules
@@ -42,7 +53,7 @@ zettle-deck/
 
 Scaffolded. Package directories and `package.json` files exist for all four packages; `src/index.js` stubs are in place. No tool implementations exist yet.
 
-See `plan.md` for the build sequence and `design.md` for resolved and open decisions.
+SDD specifications are fully written. See `.indez/planning/epics/EPIC-001-mcp-server-platform.md` for the build sequence and `.indez/steering/tech.md` for architectural decisions. `plan.md` and `design.md` are legacy reference documents.
 
 ## Key Decisions (see design.md for full rationale)
 
