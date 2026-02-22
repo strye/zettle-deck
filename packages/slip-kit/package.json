@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "node --test src/**/*.test.js"
+    "test": "jest"
   },
   "dependencies": {
     "unified": "^11.0.0",
@@ -13,5 +13,12 @@
     "remark-stringify": "^11.0.0",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/test/**/*.test.js"]
   }
 }
