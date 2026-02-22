@@ -1,5 +1,9 @@
 .claude/current-context.md
+.claude/agents
+.claude/commands
 content
+
+
 
 
 # Production content directory - exclude symlinks
@@ -37,6 +41,10 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov
+
+# Jest artifacts
+*.snap
+.jest-cache/
 
 # nyc test coverage
 .nyc_output

@@ -59,8 +59,9 @@ Defined error codes: `NOT_FOUND`, `SANDBOX_VIOLATION`, `INVALID_PARAMS`, `PARSE_
 
 - **Unit tests**: Per-module with `memfs` or `mock-fs` for fs mocking
 - **Integration tests**: Against real temp vault directories
-- **Framework**: Jest (already in root devDependencies)
+- **Framework**: Jest, declared as a devDependency in each package — not at the workspace root
 - **No E2E MCP tests** planned initially
+- See [mono-repo.md](mono-repo.md) for test locality rules and workspace-level run conventions
 
 ## Technical Constraints
 

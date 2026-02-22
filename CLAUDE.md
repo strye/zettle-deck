@@ -24,7 +24,8 @@ zettle-deck/
 │   │   ├── epics/      # EPIC-NNN-slug.md
 │   │   └── features/   # FEAT-NNN-slug.md
 │   └── specs/
-│       ├── feat-001-slip-kit/     # specs for slip-kit (SPEC-000 through SPEC-005)
+│       ├── epic-001-mcp-server-platform/ # cross-cutting specs (SPEC-000)
+│       ├── feat-001-slip-kit/     # specs for slip-kit (SPEC-001 through SPEC-005)
 │       ├── feat-002-zettel-forge/ # specs for zettel-forge (SPEC-006 through SPEC-010)
 │       ├── feat-003-neuro-dex/    # specs for neuro-dex (SPEC-013)
 │       └── feat-004-zettel-agent/ # specs for zettel-agent (SPEC-011, SPEC-012, SPEC-014)

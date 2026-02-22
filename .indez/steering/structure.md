@@ -52,6 +52,7 @@ zettle-deck/
 │   │   ├── epics/                # EPIC-NNN-slug.md
 │   │   └── features/             # FEAT-NNN-slug.md
 │   └── specs/
+│       ├── epic-001-mcp-server-platform/ # cross-cutting specs scoped to the epic
 │       ├── feat-001-slip-kit/    # specs belonging to FEAT-001
 │       ├── feat-002-zettel-forge/ # specs belonging to FEAT-002
 │       ├── feat-003-neuro-dex/   # specs belonging to FEAT-003
@@ -61,6 +62,17 @@ zettle-deck/
 ├── plan.md                       # legacy build plan (reference)
 └── design.md                     # legacy design doc (reference)
 ```
+
+## Cross-Cutting Specs
+
+Some specs are prerequisites for the entire project rather than a single feature — e.g., test infrastructure, shared build tooling. These specs:
+
+- Live in an epic-level grouping folder: `specs/epic-NNN-slug/` (e.g., `epic-001-mcp-server-platform/`)
+- Set `**Feature**: Cross-cutting (all packages)` in their header instead of a feature link
+- Keep `**Epic**: EPIC-NNN` as their planning anchor
+- Use `**Blocks**: All other specs` (or similar) to signal their scope
+
+The grouping convention is consistent: specs always live under exactly one grouping folder in `specs/`, whether that folder is feature-scoped (`feat-NNN-slug/`) or epic-scoped (`epic-NNN-slug/`).
 
 ## Naming Conventions
 
