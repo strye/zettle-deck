@@ -63,10 +63,3 @@ Register neuro-dex tools alongside zettel-forge tools in the server, run a full 
 - **NFR-1** (Completeness): All 14 tools SHALL have at least one happy-path and one error-path integration test case.
 - **NFR-2** (Documentation): README SHALL be accurate and tested against a fresh setup.
 
-## Implementation Notes
-
-- Update `packages/zettel-agent/src/tool-registry.js` to import and register `require('neuro-dex')` tools
-- Integration test: `packages/zettel-agent/test/integration.test.js`
-- Use `createTempVault` from SPEC-000; populate it with 3–5 realistic sample notes
-- MCP client for tests: use `@modelcontextprotocol/sdk`'s client utilities or a test harness
-- README sections: Prerequisites, Installation, Configuration, Running, MCP Client Setup, Tool Reference
